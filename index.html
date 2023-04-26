@@ -16,36 +16,40 @@
   <body>
     <header>
       <nav id="navbar">
-        <div id="navbar__inner">
-          <h2>Uai < Code /></h2>
-          <ul id="nav__links">
+        <div id="navbar-title">
+          <h2>Uai CODE</h2>
+          <ul id="nav-items">
             <li><a href="#">Home</a></li>
             <li><a href="#">Categorias</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <div class="container">
-      <main id="posts-container"></main>
-      <article class="post">
-        <img
-          src="./images/big_bang.jpg"
-          alt="Concepção artística do Big Bang"
-        />
-        <h3 class="title"></h3>
-        <p class="description">A caminhada começa com o primeiro passo...</p>
-        <a href="#">Ler mais...</a>
-      </article>
+      <main id="container-posts">
+        <article class="container-post">
+          <img
+            src="./images/big_bang.jpg"
+            alt="Concepção artística do Big Bang"
+          />
+          <h3 class="container-post-title">Gênesis</h3>
+          <p class="container-post-description">
+            A caminhada começa com o primeiro passo...
+          </p>
+          <p class="container-post-author">Por: Maria Cláudia</p>
+          <a href="#">Ler mais...</a>
+        </article>
+      </main>
       <aside id="sidebar">
-        <section id="search-bar">
+        <section id="sidebar-search">
           <h4>Busca</h4>
           <form>
             <input type="text" placeholder="Pesquise no blog" />
             <input type="submit" value="Buscar" />
           </form>
         </section>
-        <section id="categories">
+        <section id="sidebar-categories">
           <h4>Categorias</h4>
           <nav>
             <ul>
@@ -57,21 +61,28 @@
             </ul>
           </nav>
         </section>
-        <section id="tags">
+        <section id="sidebar-tags">
           <h4>Tags</h4>
-          <div id="tags-container">
+          <div id="sidebar-tags-container">
             <a href="#">HTML</a>
             <a href="#">CSS</a>
             <a href="#">JavaScript</a>
             <a href="#">React</a>
           </div>
         </section>
+        <section id="sidebar-about">
+          <h4>Sobre a autora</h4>
+          <p>
+            Desenvolvedora de Sistemas Front-End, venho atuando em projetos
+            utilizando HTML, CSS, JavaScript
+          </p>
+        </section>
       </aside>
     </div>
     <footer id="footer">
-      <h2>Blog</h2>
-      <p>Os melhores registros de aventuras</p>
-      <p>2022 &copy; Uai Code</p>
+      <h2>Uai Code</h2>
+      <p>TI Style e afins</p>
+      <p>2023 &copy; Uai Code</p>
     </footer>
   </body>
 </html>
