@@ -20,7 +20,7 @@
         <ul class="header__list">
           <li class="header__item"><a href="#">Home</a></li>
           <li class="header__item"><a href="#">Categorias</a></li>
-          <li class="header__item"><a href="#">Sobre</a></li>
+          <li class="header__item"><a href="#about">Sobre</a></li>
         </ul>
       </nav>
       <div class="header__search">
@@ -47,7 +47,7 @@
             A caminhada começa com o primeiro passo...
           </p>
           <p class="post__author">Por: Maria Cláudia</p>
-          <button href="#">Ler mais...</button>
+          <button class="click center" href="#">Ler mais...</button>
         </article>
         <article class="post">
           <img class="post__image" src="./images/html.jpg" alt="Código HTML" />
@@ -56,16 +56,20 @@
             <i>Confira o próximo post na semana que vem...</i>
           </p>
           <p class="post__author">Por: Maria Cláudia</p>
-          <button href="#">Em breve...</button>
+          <button class="click" href="#">Em breve...</button>
         </article>
       </main>
 
       <aside class="content__aside">
         <section class="search">
           <h4>Busca</h4>
-          <form>
-            <input type="text" placeholder="Pesquise no blog" />
-            <input type="submit" value="Buscar" />
+          <form class="search__form">
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Pesquise no blog"
+            />
+            <input class="click" type="submit" value="Buscar" />
           </form>
         </section>
 
@@ -81,20 +85,27 @@
             </ul>
           </nav>
         </section>
-        <section class="search">
-          <h4>Tags</h4>
-          <div>
-            <a href="#">HTML</a>
-            <a href="#">CSS</a>
-            <a href="#">JavaScript</a>
-            <a href="#">React</a>
+
+        <section class="tags">
+          <h4 class="tags__title">Tags</h4>
+          <div class="tags__links">
+            <a class="click" href="#">HTML</a>
+            <a class="click" href="#">CSS</a>
+            <a class="click" href="#">JavaScript</a>
+            <a class="click" href="#">React</a>
           </div>
         </section>
-        <section class="about">
+
+        <section id="about">
           <h4>Sobre a autora</h4>
-          <p>
-            Desenvolvedora de Sistemas Front-End, atuando em projetos utilizando
-            HTML, CSS, JavaScript
+          <img
+            class="about__image"
+            src="./images/foto.jpg"
+            alt="Maria Cláudia"
+          />
+          <p class="about__text">
+            Uma canceriana, naturalizada mineira, que gosta de codar em HTML,
+            CSS, JavaScript e afins...
           </p>
         </section>
       </aside>
