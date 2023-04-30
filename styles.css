@@ -15,6 +15,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url(./images/background_light.jpg);
     background-size: contain;    
 }
@@ -38,9 +40,14 @@ span {
     text-transform: uppercase;
 }
 
-.header {
-    width: 100vw;
+.header,
+.post {
     background-color: var(--bg-color);
+    width: 100vw;
+
+}
+
+.header {
     padding: 2rem;
     display: flex;
     flex-direction: column; 
