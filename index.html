@@ -34,86 +34,73 @@
       </div>
     </header>
 
-    <main>
-      <article class="post">
-        <!-- <img
-          class="post__image"
-          src="./images/big_bang.jpg"
-          alt="Concepção artística do Big Bang"
-        /> -->
-        <h3 class="post__title">Gênesis</h3>
-        <p class="post__subtitle">
-          <i>A caminhada começa com o primeiro passo...</i>
-        </p>
-        <p class="post__author">Por: Maria Cláudia</p>
-        <button href="#">Ler mais...</button>
-      </article>
-      <article class="post">
-        <!-- <img
-          class="post__image"
-          src="./images/big_bang.jpg"
-          alt="Concepção artística do Big Bang"
-        /> -->
-        <h3 class="post__title">Gênesis</h3>
-        <p class="post__subtitle">
-          <i>A caminhada começa com o primeiro passo...</i>
-        </p>
-        <p class="post__author">Por: Maria Cláudia</p>
-        <button href="#">Ler mais...</button>
-      </article>
-      <article class="post">
-        <!-- <img
-          class="post__image"
-          src="./images/big_bangs.jpg"
-          alt="Concepção artística do Big Bang"
-        /> -->
-        <h3 class="post__title">Gênesis</h3>
-        <p class="post__subtitle">
-          <i>A caminhada começa com o primeiro passo...</i>
-        </p>
-        <p class="post__author">Por: Maria Cláudia</p>
-        <button href="#">Ler mais...</button>
-      </article>
-    </main>
+    <div class="content">
+      <main class="content__posts">
+        <article class="post">
+          <img
+            class="post__image"
+            src="./images/big_bang.jpg"
+            alt="Concepção artística do Big Bang"
+          />
+          <h3 class="post__title">Gênesis</h3>
+          <p class="post__description">
+            A caminhada começa com o primeiro passo...
+          </p>
+          <p class="post__author">Por: Maria Cláudia</p>
+          <button href="#">Ler mais...</button>
+        </article>
+        <article class="post">
+          <img class="post__image" src="./images/html.jpg" alt="Código HTML" />
+          <h3 class="post__title">HTML Semântico</h3>
+          <p class="post__subtitle">
+            <i>Confira o próximo post na semana que vem...</i>
+          </p>
+          <p class="post__author">Por: Maria Cláudia</p>
+          <button href="#">Em breve...</button>
+        </article>
+      </main>
 
-    <aside>
-      <section>
-        <h4>Busca</h4>
-        <form>
-          <input type="text" placeholder="Pesquise no blog" />
-          <input type="submit" value="Buscar" />
-        </form>
-      </section>
-      <section>
-        <h4>Categorias</h4>
-        <nav>
-          <ul>
-            <li><a href="#">Front End</a></li>
-            <li><a href="#">Reflexões e carreira</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section>
-        <h4>Tags</h4>
-        <div>
-          <a href="#">HTML</a>
-          <a href="#">CSS</a>
-          <a href="#">JavaScript</a>
-          <a href="#">React</a>
-        </div>
-      </section>
-      <section>
-        <h4>Sobre a autora</h4>
-        <p>
-          Desenvolvedora de Sistemas Front-End, atuando em projetos utilizando
-          HTML, CSS, JavaScript
-        </p>
-      </section>
-    </aside>
-    <footer>
+      <aside class="content__aside">
+        <section class="search">
+          <h4>Busca</h4>
+          <form>
+            <input type="text" placeholder="Pesquise no blog" />
+            <input type="submit" value="Buscar" />
+          </form>
+        </section>
+
+        <section class="categories">
+          <h4>Categorias</h4>
+          <nav>
+            <ul>
+              <li><a href="#">Front End</a></li>
+              <li><a href="#">Reflexões e carreira</a></li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="search">
+          <h4>Tags</h4>
+          <div>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">React</a>
+          </div>
+        </section>
+        <section class="about">
+          <h4>Sobre a autora</h4>
+          <p>
+            Desenvolvedora de Sistemas Front-End, atuando em projetos utilizando
+            HTML, CSS, JavaScript
+          </p>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="footer">
       <h2>Uai <span>Code</span></h2>
       <p>TI Style e afins</p>
       <p>2023 &copy; by Maria Cláudia</p>
