@@ -81,6 +81,24 @@ span {
     margin-bottom: 1rem;
 }
 
+.post__image--post {
+    width: 55vw;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.post__caption {
+    font-size: 14px;    
+}
+
+figure {
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--tertiary-color);
+}
+
 
 /* cabeçalho */
 .header {
@@ -155,8 +173,14 @@ span {
     margin-bottom: 1rem;
 }
 
-.post__title {
+.post__title,
+.post__title--post {
     font-size: 2rem;
+}
+
+.post__title--post {
+    text-align: center;
+    margin: 1rem;
 }
 
 .post__description {
@@ -256,6 +280,8 @@ span {
 .footer p {
     margin-bottom: .7rem;
 }
+
+
 
 
 
