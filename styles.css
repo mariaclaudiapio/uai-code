@@ -7,7 +7,7 @@
 
 /* geral */
 :root {
-    --bg-color: #F2F2F2;
+    --bg-color: #f4f1f1;
     --primary-color: #8AA3E0;
     --secondary-color: #ddd;
     --tertiary-color: #444;
@@ -62,7 +62,7 @@ span {
 .tags {
     background-color: var(--bg-color);
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     border: 1px solid var(--secondary-color);    
 }
 
@@ -276,15 +276,16 @@ figure {
     .content__posts {
         flex: 3 1 0;
     }
+
+    .content__aside {
+        flex: 1 1 0;
+    }
+    
+    .search {
+        display: none;
+    }
 }
 
-.content__aside {
-    flex: 1 1 0;
-}
-
-.search {
-    display: none;
-}
 
 
 
