@@ -7,8 +7,8 @@
 
 /* geral */
 :root {
-    --bg-color: #F2F2F2;   
-    --primary-color: #8AA3E0;    
+    --bg-color: #F2F2F2;
+    --primary-color: #8AA3E0;
     --secondary-color: #ddd;
     --tertiary-color: #444;
 }
@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url(./images/background_light.jpg);
+    background-image: url(./images/background_color.jpg);
     background-size: contain;       
 }
 
@@ -38,6 +39,10 @@ span {
     text-transform: uppercase;
 }
 
+.search__input {
+    padding-left: 1rem;
+}
+
 .header__search:hover,
 .header__search:active,
 .search__input:hover,
@@ -47,11 +52,13 @@ span {
 }
 
 .header,
-.post, 
+.post,
+.post--post, 
 .search,
 .categories,
 #about,
 .footer,
+.footer--post,
 .tags {
     background-color: var(--bg-color);
     margin-bottom: 2rem;
@@ -99,6 +106,32 @@ figure {
     border-bottom: 1px dashed var(--tertiary-color);
 }
 
+.post--post {
+    width: 85vw;
+    margin: 2rem auto;
+}
+
+.text-post {
+    padding: 2rem 2.5rem;
+    line-height: 1.5rem;
+    font-size: 18px;
+}
+
+.footer {
+    margin-bottom: 0;
+    border: none;
+    border-top: var(--secondary-color);
+    padding: 3rem;
+    text-align: center;    
+}
+
+.footer--post {
+    margin-top: 2rem;
+    border: none;
+    border-top: var(--secondary-color);
+    padding: 3rem;
+    text-align: center;    
+}
 
 /* cabeçalho */
 .header {
@@ -276,8 +309,21 @@ figure {
     text-align: center;    
 }
 
+.footer--post {
+    margin-bottom: 0;
+    border: none;
+    border-top: var(--secondary-color);
+    padding: 3rem;
+    text-align: center;    
+}
+
 .footer h2,
 .footer p {
+    margin-bottom: .7rem;
+}
+
+.footer--post h2,
+.footer--post p {
     margin-bottom: .7rem;
 }
 
