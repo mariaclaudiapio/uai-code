@@ -67,6 +67,10 @@ span {
     box-sizing: content-box;
 }
 
+/* .post--post {
+    width: 85vw;
+} */
+
 .click {
     padding: .5rem 1rem;
     border: 1px solid var(--secondary-color);
@@ -107,17 +111,17 @@ figure {
     border-bottom: 1px dashed var(--tertiary-color);
 }
 
-.post--post {
-    
-    margin: 2rem auto;
+.post--post {    
+    margin: 2.5rem auto;
     text-align: justify;
     box-sizing: border-box;
 }
 
 .text-post {
-    padding: 2rem 2.5rem;
+    padding: 2rem auto;
     line-height: 1.5rem;
     font-size: 18px;
+    margin-top: 1.5rem;
 }
 
 .footer {
@@ -176,14 +180,17 @@ figure {
     background-position: right;   
 }
 
+
 @media (min-width: 768px) {
     .header__search {
         display: none;
     }
-
+    
     .header {
         flex-direction: row;
         justify-content: space-around;
+    }    .post--post {
+        margin: 2rem 2.5rem;
     }
 }
 
