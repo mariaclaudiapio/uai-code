@@ -118,10 +118,20 @@ figure {
 }
 
 .text-post {
-    padding: 2rem auto;
+    padding-bottom: 2rem;
     line-height: 1.5rem;
     font-size: 18px;
-    margin-top: 1.5rem;
+    margin: 1.5rem;
+    border-bottom: 1px dashed var(--tertiary-color);
+}
+
+.post__section {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 30px;
+    border-radius: 5px;
+    width: 80vw;    
+    margin: 2rem auto;
 }
 
 .footer {
