@@ -134,6 +134,13 @@ figure {
     margin: 2rem auto;
 }
 
+.post__section p {
+    color: var(--bg-color);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
 .footer {
     margin-bottom: 0;
     border: none;
