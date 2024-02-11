@@ -117,6 +117,12 @@ figure {
     box-sizing: border-box;
 }
 
+.post__author-post {
+    color: #777;
+    text-align: right;
+    font-style: italic;
+}
+
 .text-post {
     padding-bottom: 2rem;
     line-height: 1.5rem;
